@@ -1,0 +1,60 @@
+{% load static %}
+    <section id="contact" class="section-padding bg-gray">
+      <div class="container">
+        <div class="section-header text-center">          
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Countate-nos</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="contact-block">
+              <form id="contato" method="post" action="{% url 'index' %}">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Coloque seu nome">
+                      <div class="help-block with-errors"></div>
+                    </div>                                 
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Coloque seu e-mail">
+                      <div class="help-block with-errors"></div>
+                    </div> 
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" placeholder="Celular" id="celular" class="form-control" name="celular" required data-error="Coloque o numero de contato">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                   <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" placeholder="Assunto" id="assunto" class="form-control" name="assunto" required data-error="Coloque o assunto">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group"> 
+                      <textarea class="form-control" id="menssagem" placeholder="Mensagem" name="mensagem" rows="7" data-error="Write your message" required></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="submit-button text-left">
+                      <button class="btn btn-common" id="form-submit" type="submit">Enviar e-mail</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                      <div class="clearfix"></div> 
+                    </div>
+                  </div>
+                </div>            
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="map">
+              <object style="border:0; height: 280px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1496.477979595162!2d-47.308376163980824!3d-22.811937395723554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8980d0f2338ad%3A0x5a5041cdd24649b9!2sR.%20Odil%20Cereser%20-%20Campo%20Belo%2C%20Nova%20Odessa%20-%20SP%2C%2013460-000!5e1!3m2!1spt-PT!2sbr!4v1618705323936!5m2!1spt-PT!2sbr"></object>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
