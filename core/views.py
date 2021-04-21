@@ -22,7 +22,7 @@ class IndexView(FormView, View):
         context['pessoas'] = Pessoa.objects.order_by('?').all()
         context['tecnologias'] = Tecnologia.objects.order_by('?').all()
         context['expectativas'] = Expectativa.objects.order_by('?').all()
-        context['experiencias'] = Experiencia.objects.order_by('?').all()
+        context['experiencias'] = Experiencia.objects.all()
         return context
 
     def form_valid(self, form, *args, **kwargs):
