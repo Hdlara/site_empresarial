@@ -7,48 +7,65 @@
         </div>
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
           <div class="col-lg-7 col-md-12 col-sm-12">
-            <div class="contact-block">
-              <form id="contato" method="post" action="{% url 'index' %}">
-                {% csrf_token %}
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Coloque seu nome">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Coloque seu e-mail">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Celular" id="celular" class="form-control" name="celular" required data-error="Coloque o numero de contato">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                   <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Assunto" id="assunto" class="form-control" name="assunto" required data-error="Coloque o assunto">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea class="form-control" id="menssagem" placeholder="Mensagem" name="mensagem" rows="7" data-error="Write your message" required></textarea>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="submit-button text-left">
-                      <button class="btn btn-common" id="form-submit" type="submit">Enviar</button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                  <ul class="address">
+                    <li>
+                      <i class="lni-map-marker"></i> Residencial dos Ipês - <br> Nova Odessa, São Paulo</a>
+                    </li>
+                    <li>
+                     <i class="lni-phone-handset"></i> +55 19 99458 9258</a>
+                    </li>
+                    <li>
+                     <i class="lni-envelope"></i> henriquediaslara@hotmail.com</a>
+                    </li>
+                  </ul>
                 </div>
-              </form>
+              </div>
             </div>
+<!--            <div class="contact-block">-->
+<!--              <form id="contato" method="post" action="{% url 'index' %}">-->
+<!--                {% csrf_token %}-->
+<!--                <div class="row">-->
+<!--                  <div class="col-md-6">-->
+<!--                    <div class="form-group">-->
+<!--                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Coloque seu nome">-->
+<!--                      <div class="help-block with-errors"></div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-md-6">-->
+<!--                    <div class="form-group">-->
+<!--                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Coloque seu e-mail">-->
+<!--                      <div class="help-block with-errors"></div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-md-12">-->
+<!--                    <div class="form-group">-->
+<!--                      <input type="text" placeholder="Celular" id="celular" class="form-control" name="celular" required data-error="Coloque o numero de contato">-->
+<!--                      <div class="help-block with-errors"></div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                   <div class="col-md-12">-->
+<!--                    <div class="form-group">-->
+<!--                      <input type="text" placeholder="Assunto" id="assunto" class="form-control" name="assunto" required data-error="Coloque o assunto">-->
+<!--                      <div class="help-block with-errors"></div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-md-12">-->
+<!--                    <div class="form-group">-->
+<!--                      <textarea class="form-control" id="menssagem" placeholder="Mensagem" name="mensagem" rows="7" data-error="Write your message" required></textarea>-->
+<!--                      <div class="help-block with-errors"></div>-->
+<!--                    </div>-->
+<!--                    <div class="submit-button text-left">-->
+<!--                      <button class="btn btn-common" id="form-submit" type="submit">Enviar</button>-->
+<!--                      <div id="msgSubmit" class="h3 text-center hidden"></div>-->
+<!--                      <div class="clearfix"></div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </form>-->
+<!--            </div>-->
           </div>
           <div class="col-lg-5 col-md-12 col-xs-12">
             <div class="map">
