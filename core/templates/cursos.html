@@ -1,0 +1,26 @@
+{% load static %}
+<section id="cursos" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Cursos</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row">
+
+          {% for c in cursos %}
+          <!-- Cursos item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="{{ c.icone  }}"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="{{ c.link }}" target="_blank">{{ c.curso }}</a></h3>
+                <p>{{ c.descricao }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
